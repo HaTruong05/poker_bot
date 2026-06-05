@@ -35,7 +35,6 @@ class image_converter(Node):
 		# Publishers
 		self.image_pub = self.create_publisher(Image, "new_image", 10)
 		self.cmd_vel_pub = self.create_publisher(TwistStamped, '/cmd_vel', 10)
-		self.data_pub = self.create_publisher(String, '/poker_new_card', 10)
 
 		# Subscribers
 		self.bridge = CvBridge()
